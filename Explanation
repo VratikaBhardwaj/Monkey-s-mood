@@ -1,0 +1,33 @@
+const closedFace = document.querySelector('.closed'):
+This line uses document.querySelector() to select the first element with the class name 'closed'. It assumes that there are two HTML elements with class 'closed' and 'open', representing the closed and open faces, respectively.
+
+const openFace = document.querySelector('.open'):
+Similar to the previous line, this one selects the first element with the class name 'open'.
+
+closedFace.addEventListener('click', () => { ... }):
+This adds a click event listener to the element with the class 'closed'. When this element is clicked, the function inside the event listener is triggered.
+
+if (openFace.classList.contains('open')) { ... }:
+This checks if the 'openFace' element currently has the class 'open'. This is done using the classList.contains() method, which returns true if the specified class ('open' in this case) exists in the class list of the element.
+
+openFace.classList.add('active'):
+If the 'openFace' element has the class 'open' (as checked in the previous step), this line adds the class 'active' to the 'openFace' element. The 'active' class presumably represents the active state of the face.
+
+closedFace.classList.remove('active'):
+This line removes the class 'active' from the 'closedFace' element, making it inactive.
+
+The code inside the first event listener ensures that when the 'closedFace' is clicked, it becomes inactive (by removing the 'active' class), and the 'openFace' becomes active (by adding the 'active' class).
+
+openFace.addEventListener('click', () => { ... }):
+This adds a click event listener to the element with the class 'open'. When this element is clicked, the function inside the event listener is triggered.
+
+if (closedFace.classList.contains('closed')) { ... }:
+This checks if the 'closedFace' element currently has the class 'closed'. If it does, the code inside the curly braces is executed.
+
+closedFace.classList.add('active'):
+If the 'closedFace' element has the class 'closed' (as checked in the previous step), this line adds the class 'active' to the 'closedFace' element, making it active.
+
+openFace.classList.remove('active'):
+This line removes the class 'active' from the 'openFace' element, making it inactive.
+
+The code inside the second event listener ensures that when the 'openFace' is clicked, it becomes inactive (by removing the 'active' class), and the 'closedFace' becomes active (by adding the 'active' class).
